@@ -7,7 +7,7 @@ class StartPage:
     def __init__(self, root):
         self.root = root
         self.root.title("G4MERS Preferences")
-        self.root.geometry("1000x700")
+        self.root.geometry("1200x700")
 
         # Create input fields
         self.create_input_fields()
