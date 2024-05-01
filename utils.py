@@ -39,7 +39,10 @@ def is_better_match(game1, game2, user):
     genres_match2 = count_matching_genres(game2.genre, user.selected_genres)
 
     # Return True if game1 has more matching genres
-    return genres_match1 > genres_match2
+    if genres_match1 != genres_match2:
+        return genres_match1 > genres_match2
+    
+    return False
 
 @staticmethod
 def count_matching_platforms(platforms, selected_platforms):
