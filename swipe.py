@@ -106,8 +106,6 @@ class SwipePage:
         # If no more games match the criteria, update the display to show no more games
         self.game_display.config(text="No more games to display")
 
-
-
     def create_matches_button(self):
         # Matches Button
         self.matches_button = tk.Button(self.root, text="View Matches", command=self.show_matches_page)

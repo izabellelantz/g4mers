@@ -34,15 +34,15 @@ class StartPage:
             self.selected_genres.append((genre, genre_var))
 
         # Preferred Consoles w/ options
-        platform_label = tk.Label(self.root, text="Preferred Consoles:")
+        platform_label = tk.Label(self.root, text="Preferred Platforms:")
         platform_label.pack(padx=10, pady=5)
         self.selected_platforms = []
-        for console in ["Xbox One", "Xbox Series", "PlayStation 4", "PlayStation 5", "Nintendo Switch", "Nintendo DS"]:
-            console_var = tk.BooleanVar()
-            console_var.set(False)
-            console_checkbutton = tk.Checkbutton(self.root, text=console, variable=console_var)
-            console_checkbutton.pack(padx=10, pady=2, anchor="w")
-            self.selected_platforms.append((console, console_var))
+        for platform in ["Xbox One", "Xbox Series", "PlayStation 4", "PlayStation 5", "Nintendo Switch", "Nintendo DS"]:
+            platform_var = tk.BooleanVar()
+            platform_var.set(False)
+            platform_checkbutton = tk.Checkbutton(self.root, text=platform, variable=platform_var)
+            platform_checkbutton.pack(padx=10, pady=2, anchor="w")
+            self.selected_platforms.append((platform, platform_var))
 
     def create_save_button(self):
         # Save Button
